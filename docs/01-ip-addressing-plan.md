@@ -21,7 +21,7 @@ monitoring, automation) is built on top of it.
 ## 3.Sites
 
 | Site | Location | Block | Role |
-|------|----------||------|------|
+|------|----------|-------|------|
 | HQ | Main office | 10.10.0.0/16 | core site: all department, servers, DMZ |
 | Branch 1 | Amman | 10.10.0.0/16 | Branch: staff and network management |
 | Branch 2 | Irbid | 10.30.0.0/16 | Branch: staff and network management |
@@ -54,7 +54,7 @@ monitoring, automation) is built on top of it.
 ## 6. WAN Links 
 
 | Link | Network | Our router | ISP side |
-|------|---------|------------||---------|
+|------|---------|------------|----------|
 | HQ - ISP | 203.0.113.0/30 | 203.0.113.1 | 203.0.113.2 |
 | Branch 1 - ISP | 203.0.113.4/30 | 203.0.113.5 | 203.0.113.6 |
 | Branch 2 - ISP | 203.0.113.8/30 | 203.0.113.9 | 203.0.113.10 |
