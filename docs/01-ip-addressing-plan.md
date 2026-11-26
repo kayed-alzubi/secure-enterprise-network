@@ -15,7 +15,7 @@ monitoring, automation) is built on top of it.
 - The default gateway of every VLAN os the **'.1'** address.
 - Point-to-point WAN links use '/30'; router loopbacks use '/32' .
 - Unused switch ports go into VLAN 999 and are shut down. 
-- Trunk native VLAN is 998 (unused, carries no traffic).
+- Trunk native VLAN is 999 (unused, carries no traffic).
 
 
 ## 3.Sites
