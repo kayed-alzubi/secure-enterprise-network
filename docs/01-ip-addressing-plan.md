@@ -23,7 +23,7 @@ monitoring, automation) is built on top of it.
 | Site | Location | Block | Role |
 |------|----------|-------|------|
 | HQ | Main office | 10.10.0.0/16 | core site: all department, servers, DMZ |
-| Branch 1 | Amman | 10.10.0.0/16 | Branch: staff and network management |
+| Branch 1 | Amman | 10.20.0.0/16 | Branch: staff and network management |
 | Branch 2 | Irbid | 10.30.0.0/16 | Branch: staff and network management |
 
 ## 4. HQ VLANs 
@@ -37,7 +37,6 @@ monitoring, automation) is built on top of it.
 | 50 | Guest | 10.10.50.0/24 | 10.10.50.1 | Guests: internet only |
 | 99 | Network-Mgmt | 10.10.99.0/24 | 10.10.99.1 | Management of network devices |
 | 100 | DMZ | 10.10.100.0/24 | 10.10.100.1 | Servers exposed to the internet |
-| 998 | Native | none | none | Trunk native VLAN (unused) |
 | 999 | Blackhole | none | none | Unused ports (shutdown) |
 
 ## 5. Branch VLANs
@@ -66,6 +65,17 @@ monitoring, automation) is built on top of it.
 | HQ-R1 | 10.255.0.1/32 | Router ID (OSPF/BGP) |
 | BR1-R1 | 10.255.0.2/32 | Router ID (OSPF/BGP) |
 | BR2-R1 | 10.255.0.3/32 | Router ID (OSPF/BGP) |
+
+
+## HQ Switch Management Addresses (VLAN 99)
+
+| Device | Interface | IP Address |
+|--------|-----------|------------|
+| Core-SW1 | Vlan99 | 10.10.99.11/24 |
+| Access-SW1 | Vlan99 | 10.10.99.12/24 |
+| Access-SW2 | Vlan99 | 10.10.99.13/24 |
+| Core-SW2 | Vlan99 | 10.10.99.14/24 |
+
 
 ## 8. Notes
 
